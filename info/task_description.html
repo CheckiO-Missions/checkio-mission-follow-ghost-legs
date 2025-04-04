@@ -1,0 +1,44 @@
+<!-- Describe task in general -->
+
+<p>
+    <a href="https://en.wikipedia.org/wiki/Ghost_leg">Ghost leg</a> is a well-known method used to get random results.
+    This mechanism has the effect of changing the order in the list.
+</p>
+
+<p style="text-align: center;">
+    <img title="example_01" src="{{MEDIA}}ghost_leg_examples_01.svg" alt="example_01" style="vertical-align:top; width:250px;"/>
+    <img title="example_01" src="{{MEDIA}}ghost_leg_examples_02.svg" alt="example_02" style="vertical-align:top; width:250px;"/>
+</p>
+
+<p>
+    <strong>Examples:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">
+assert follow_ghost_legs(3, [(1, 2), (2, 3), (1, 2)]) == [3, 2, 1]
+assert follow_ghost_legs(4, [(2, 3), (1, 2), (2, 3), (3, 4)]) == [3, 2, 4, 1]
+assert follow_ghost_legs(5, [(3, 4), (4, 5), (3, 4), (2, 3), (3, 4)]) == [1, 5, 4, 2, 3]
+assert follow_ghost_legs(6, [(1, 2), (2, 3), (3, 4), (4, 5), (5, 6)]) == [ 2, 3, 4, 5, 6, 1]
+</pre>
+
+<p>
+You are given the number of vertical lines and a list of
+legs as input values.
+</p>
+<ul>
+    <li>If the number of vertical lines is 3, then the starting points are 1, 2, and 3 respectively.</li>
+    <li>The leg is a tuple of two integers, which represent the two vertical lines connected by the leg.
+    (The leg always connects adjacent vertical line).</li>
+    <li>The order of legs represents the level at which they are placed (first leg is the top, and last leg is the bottom).</li>
+</ul>
+
+<p>Follow the ghost legs and return a list of converted numbers.</p>
+
+<!-- Explain input and output values -->
+<p>
+    <strong>Input:</strong> The number of vertical lines and a list of legs (a integer and a list of tuple of two integers).
+</p>
+
+<p>
+    <strong>Output:</strong> A list of converted numbers (a list of integers).
+</p>
