@@ -5,11 +5,17 @@ requirejs(['ext_editor_io2', 'jquery_190', 'raphael_210'],
              * attr
              */
             const attr = {
-                'numbers': {
+                'top_numbers': {
                     'font-size': '14px',
                     'font-family': 'Times',
                     'font-weight': 'bold',
                     'fill': '#294270',
+                },
+                'bottom_numbers': {
+                    'font-size': '14px',
+                    'font-family': 'Times',
+                    'font-weight': 'bold',
+                    'fill': '#F0801A',
                 },
                 'lines': {
                     'stroke-width': '2.5px',
@@ -46,7 +52,7 @@ requirejs(['ext_editor_io2', 'jquery_190', 'raphael_210'],
              * draw top numbers
              */
             for (let i = 0; i < input[0]; i += 1) {
-                paper.text(os + unit * i, os + number_height / 2, i + 1).attr(attr.numbers)
+                paper.text(os + unit * i, os + number_height / 2, i + 1).attr(attr.top_numbers)
             }
             /**
              * draw vertical lines
@@ -95,7 +101,7 @@ requirejs(['ext_editor_io2', 'jquery_190', 'raphael_210'],
             bottom_numbers.forEach((b, i) => {
                 paper.text(os + unit * i,
                     os + number_height + lead_length * 2 + v_unit * leg_num + number_height / 2,
-                    b).attr(attr.numbers)
+                    b).attr(attr.bottom_numbers)
             })
         }
         var io = new extIO({
