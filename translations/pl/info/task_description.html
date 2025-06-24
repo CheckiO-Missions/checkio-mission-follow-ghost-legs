@@ -1,0 +1,39 @@
+<!-- Describe task in general -->
+<img src="{{MEDIA_CONVERT}}title.png" class="title_img" />
+<p>
+    <a target="_blank" href="https://en.wikipedia.org/wiki/Ghost_leg">Ghost leg</a> jest dobrze znaną metodą używaną do uzyskiwania losowych wyników.
+    Mechanizm ten powoduje zmianę kolejności na liście.
+</p>
+
+<p style="text-align: center;">
+    <img title="example_01" src="{{MEDIA}}ghost_legs_example_01.svg" alt="example_01" style="vertical-align:top; width:250px;"/>
+    <img title="example_01" src="{{MEDIA}}ghost_legs_example_02.svg" alt="example_02" style="vertical-align:top; width:250px;"/>
+</p>
+
+<p>
+    <strong>Przykłady:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<p>
+Jako wartości wejściowe otrzymują Państwo liczbę pionowych linii i listę
+jako wartości wejściowe.
+</p>
+<ul>
+    <li>Jeśli liczba pionowych linii wynosi 3, punkty początkowe to odpowiednio 1, 2 i 3.</li>
+    <li>Noga jest krotką dwóch liczb całkowitych, które reprezentują dwie pionowe linie połączone przez nogę.
+    (Odnoga zawsze łączy sąsiednią linię pionową).</li>
+    <li>Kolejność nóg reprezentuje poziom, na którym są one umieszczone (pierwsza noga jest na górze, a ostatnia na dole).</li>
+</ul>
+
+<p>Proszę podążać za nogami-duchami i zwrócić listę przekonwertowanych liczb.</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Dane wejściowe:</strong> Liczba pionowych linii i lista nóg (liczba całkowita i lista krotek dwóch liczb całkowitych).
+</p>
+
+<p>
+   <strong>Dane wyjściowe:</strong> Lista przekonwertowanych liczb (lista liczb całkowitych).
+</p>
