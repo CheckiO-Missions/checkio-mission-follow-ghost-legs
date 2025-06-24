@@ -1,0 +1,39 @@
+<!-- Describe task in general -->
+<img src="{{MEDIA_CONVERT}}title.png" class="title_img" />
+<p>
+    <a target="_blank" href="https://en.wikipedia.org/wiki/Ghost_leg">Ghost leg</a> ist eine bekannte Methode, um zufällige Ergebnisse zu erhalten.
+    Dieser Mechanismus hat den Effekt, dass sich die Reihenfolge in der Liste ändert.
+</p>
+
+<p style="text-align: center;">
+    <img title="example_01" src="{{MEDIA}}ghost_legs_example_01.svg" alt="example_01" style="vertical-align:top; width:250px;"/>
+    <img title="example_01" src="{{MEDIA}}ghost_legs_example_02.svg" alt="example_02" style="vertical-align:top; width:250px;"/>
+</p>
+
+<p>
+    <strong>Beispiele:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<p>
+Sie erhalten die Anzahl der vertikalen Linien und eine Liste von
+beinen als Eingabewerte.
+</p>
+<ul>
+    <li>Wenn die Anzahl der vertikalen Linien 3 ist, dann sind die Startpunkte 1, 2 bzw. 3.</li>
+    <li>Der Schenkel ist ein Tupel aus zwei ganzen Zahlen, die die beiden durch den Schenkel verbundenen vertikalen Linien darstellen.
+    (Der Schenkel verbindet immer benachbarte vertikale Linien).</li>
+    <li>Die Reihenfolge der Schenkel steht für die Ebene, auf der sie sich befinden (der erste Schenkel ist der oberste und der letzte Schenkel ist der unterste).</li>
+</ul>
+
+<p>Folgen Sie den Geisterschenkeln und geben Sie eine Liste der umgewandelten Zahlen zurück.</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Eingabe:</strong> Die Anzahl der vertikalen Linien und eine Liste der Schenkel (eine ganze Zahl und eine Liste von Tupeln aus zwei ganzen Zahlen).
+</p>
+
+<p>
+   <strong>Ausgabe:</strong> Eine Liste mit umgewandelten Zahlen (eine Liste mit ganzen Zahlen).
+</p>
