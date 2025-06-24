@@ -1,0 +1,39 @@
+<!-- Describe task in general -->
+<img src="{{MEDIA_CONVERT}}title.png" class="title_img" />
+<p>
+    <a target="_blank" href="https://en.wikipedia.org/wiki/Ghost_leg">Ghost leg</a> est une méthode bien connue pour obtenir des résultats aléatoires.
+    Ce mécanisme a pour effet de modifier l'ordre de la liste.
+</p>
+
+<p style="text-align: center;">
+    <img title="example_01" src="{{MEDIA}}ghost_legs_example_01.svg" alt="example_01" style="vertical-align:top; width:250px;"/>
+    <img title="example_01" src="{{MEDIA}}ghost_legs_example_02.svg" alt="example_02" style="vertical-align:top; width:250px;"/>
+</p>
+
+<p>
+    <strong>Exemples:</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<p>
+On vous donne le nombre de lignes verticales et une liste de jambes comme valeurs d'entrée
+comme valeurs d'entrée.
+</p>
+<ul>
+    <li>Si le nombre de lignes verticales est de 3, les points de départ sont respectivement 1, 2 et 3.</li>
+    <li>Le segment est un tuple de deux entiers, qui représentent les deux lignes verticales connectées par le segment.
+    (Le segment relie toujours une ligne verticale adjacente).</li>
+    <li>L'ordre des branches représente le niveau auquel elles sont placées (la première branche est en haut et la dernière branche est en bas).</li>
+</ul>
+
+<p>Suivez les pattes fantômes et renvoyez une liste de nombres convertis.</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>Entrée:</strong> Le nombre de lignes verticales et une liste de pattes (un entier et une liste de tuple de deux entiers).
+</p>
+
+<p>
+   <strong>Sortie: une liste de nombres convertis (une liste d'entiers):</strong> Une liste de nombres convertis (une liste d'entiers).
+</p>
