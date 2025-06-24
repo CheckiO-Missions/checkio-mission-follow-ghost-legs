@@ -1,0 +1,39 @@
+<!-- Describe task in general -->
+<img src="{{MEDIA_CONVERT}}title.png" class="title_img" />
+<p>
+    <a target="_blank" href="https://en.wikipedia.org/wiki/Ghost_leg">Ghost leg</a> 是一种众所周知的获得随机结果的方法。
+    这种机制具有改变列表顺序的效果。
+</p>
+
+<p style="text-align: center;">
+    <img title="example_01" src="{{MEDIA}}ghost_legs_example_01.svg" alt="example_01" style="vertical-align:top; width:250px;"/>
+    <img title="example_01" src="{{MEDIA}}ghost_legs_example_02.svg" alt="example_02" style="vertical-align:top; width:250px;"/>
+</p>
+
+<p>
+    <strong>例子</strong>
+</p>
+
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
+
+<p>
+给你垂直线的数量和腿的列表作为输入值。
+作为输入值。
+</p>
+<ul>
+    <li>如果垂直线的数量是 3，那么起点分别是 1、2 和 3。</li>
+    <li>支脚是由两个整数组成的元组，代表支脚连接的两条垂直线。
+    (脚总是连接相邻的垂直线）。</li>
+    <li>线脚的顺序代表它们所处的层级（第一条线脚在顶层，最后一条线脚在底层）。</li>
+</ul>
+
+<p>按照幽灵支脚，返回转换后的数字列表。</p>
+
+<!-- Explain input and output values -->
+<p>
+   <strong>输入</strong>垂直线的数量和线脚列表（一个整数和一个由两个整数组成的元组列表）。
+</p>
+
+<p>
+   <strong>输出：</strong>转换后的数字列表（整数列表）。
+</p>
