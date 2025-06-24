@@ -1,5 +1,5 @@
 <!-- Describe task in general -->
-
+<img src="{{MEDIA_CONVERT}}title.png" class="title_img" />
 <p>
     <a target="_blank" href="https://en.wikipedia.org/wiki/Ghost_leg">Ghost leg</a> is a well-known method used to get random results.
     This mechanism has the effect of changing the order in the list.
@@ -14,12 +14,7 @@
     <strong>Examples:</strong>
 </p>
 
-<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">
-assert follow_ghost_legs(3, [(1, 2), (2, 3), (1, 2)]) == [3, 2, 1]
-assert follow_ghost_legs(4, [(2, 3), (1, 2), (2, 3), (3, 4)]) == [3, 2, 4, 1]
-assert follow_ghost_legs(5, [(3, 4), (4, 5), (3, 4), (2, 3), (3, 4)]) == [1, 5, 4, 2, 3]
-assert follow_ghost_legs(6, [(1, 2), (2, 3), (3, 4), (4, 5), (5, 6)]) == [ 2, 3, 4, 5, 6, 1]
-</pre>
+<pre class="brush: {% if is_js %}javascript{% else %}python{% endif %}">{{init_code_tmpl}}</pre>
 
 <p>
 You are given the number of vertical lines and a list of
